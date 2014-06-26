@@ -9,5 +9,14 @@ alias gaa="git add --all"
 # Paths
 export PATH="/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin"
 
-# Misc plugins
-source $HOME/workspace/powerline/powerline/bindings/zsh/powerline.zsh
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+ export EDITOR='vim'
+else
+ export EDITOR='mvim'
+fi
+
+export EMAIL=james@lightsofapollo.com
